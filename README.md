@@ -19,9 +19,11 @@ The script verifies the backup completion after it ends its process. The script 
 Execution of the script using "restore" as an argument activates the MySQL database restoration process. Secondly the script needs the backup file location which functions as the second argument in its execution. The backup file gets decompressed with gun zip before MySQL restore commands process the output. After checking the restore success the script displays feedback about its outcome.
 
 # execution:
-First step is to open the terminal and if you are in a particulat folder thats fine if not then change the directory by using the command is cd [folder name]
-then to the following code the command is 
-
+Open the Terminal then follow this steps:
+Backup the database the command is : ./backup_restore.sh
+Restore from a backup : ./backup_restore.sh restore /path/to/backup_file.sql.gz
+Scheduling with Cron (Optional)
+To schedule daily backups at 2 AM: 0 2 * * * /path/to/backup_restore.sh >> /home/username/backup.log 2>&1
 
 # Conclusion: 
 The Bash script automates MySQL database management through backup operation automation for local storage and remote server transfers. Users achieve customization by modifying the configuration variables within the script structure. The script implements appropriate error handling mechanisms which communicate to users about operation outcomes.
