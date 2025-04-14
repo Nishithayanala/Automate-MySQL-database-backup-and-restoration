@@ -17,5 +17,11 @@ The first step in the script confirms the existence of the backup directory whic
 The script verifies the backup completion after it ends its process. The script displays a success message together with the backup file path after a successful operation. The following step of the script takes the backup file and attempts a transmission to a remote server through Secure Copy Protocol (scp). The script verifies the success of file transfer by printing appropriate communication after completion.
 # Restore Process:
 Execution of the script using "restore" as an argument activates the MySQL database restoration process. Secondly the script needs the backup file location which functions as the second argument in its execution. The backup file gets decompressed with gun zip before MySQL restore commands process the output. After checking the restore success the script displays feedback about its outcome.
+
+# execution:
+First step is to open the terminal and if you are in a particulat folder thats fine if not then change the directory by using the command is cd [folder name]
+then to the following code the command is 
+
+
 # Conclusion: 
 The Bash script automates MySQL database management through backup operation automation for local storage and remote server transfers. Users achieve customization by modifying the configuration variables within the script structure. The script implements appropriate error handling mechanisms which communicate to users about operation outcomes.
