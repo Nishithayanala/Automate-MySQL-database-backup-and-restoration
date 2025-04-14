@@ -3,10 +3,10 @@
 # Configuration
 DB_TYPE="mysql"  
 DB_USER="nishitha"
-DB_PASS="Fall@20242001"
+DB_PASS="abc@123"
 DB_NAME="my_database"
-BACKUP_DIR="/home/nishitha/backups"  
-REMOTE_STORAGE="nishitha@192.168.1.49:/home/nishitha/backups/"
+BACKUP_DIR="/home/nishitha/backups"   # select the path from your end   
+REMOTE_STORAGE="nishitha@192.168.1.49:/home/nishitha/backups/" # select the path from your end 
 DATE=$(date +'%Y%m%d_%H%M%S')
 BACKUP_FILE="${BACKUP_DIR}/${DB_NAME}_${DATE}.sql.gz"
 
